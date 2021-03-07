@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header>
+    <nav>
+      <p><a href = "index.html">STUDY MEET UP</a></p>
+      <ul>
+        <li><a href = "#">Schools/Colleges</a>
+            <ul>
+              <li><a href = "CNS.html">College of Natural Sciences</a>
+              <li><a href = "education1.html">College of Education</a>
+              <li><a href = "architecture2.html">School of Architecture</a>
+              <li><a href = "cockrell3.html">Cockrell School of Engineering</a>
+              <li><a href="./finarts4.html">College of Fine Arts</a>
+              <li><a href="./geosciences5.html">Jackson School of Geosciences</a>
+              <li><a href="./information6.html">College of Information</a>
+              <li><a href="./liberalarts7.html">College of Liberal Arts</a>
+              <li><a href="./mccombs8.html">McCombs School of Business</a>
+              <li><a href="./moody9.html">Moody College of Communication</a>
+              <li><a href="./nursing10.html">School of Nursing</a>
+              <li><a href="./pharmacy11.html">College of Pharmacy</a>
+              <li><a href="./socialwork12.html">Steve Hicks School of Social Work</a>
+              <li><a href="./testPage.html">Test</a>
+             <li><a href="./combinedtest.html">CombTest</a>
+
+
+            </ul>
+          <li><a href = "postings.html">Postings</a>
+          <li><a href = "about.html">About</a>
+        </li>
+
+       
+
+    </nav>
+  </header>
+  <body style="background-color: #ddd">
+    <script src="script.js"></script>
+    
+    <h1 style="font-family:'Tahoma'">Study Meet Up!</h1>
+    <div class = "container">
+      <br>
+      <br>
+      <h3>Post an Announcement for a Study Meeting!</h3>
+
+      <form action="post_comment.php" method="post" id="commentform">
+        <br>
+        
+        <label for="comment_author" class="required">Your name: </label>
+        <br>
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+        <br>
+
+        <label for="email" class="required">Zoom link: </label>
+        <br>
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required"> 
+        
+        <br>
+
+        <label for="email" class="required">Date and time: </label>
+        <br>
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required"> 
+
+        <br>
+
+        <label for="comment" class="required">Meeting description: </label>
+        <br>
+        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+        <br>
+       
+        <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" /> 
+        <input name="submit" type="submit" value="Submit comment" />
+
+      </form>
+
+    </div>
+    
+
+ 
+
+
+  </body>
+</html>
+

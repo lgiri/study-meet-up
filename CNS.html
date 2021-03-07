@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel= "stylesheet" type = "text/css" href="style1.css">
+  </head>
+  <header>
+    <nav>
+      <p><a href = "index.html">STUDY MEET UP</a></p>
+      <ul>
+        <li><a href = "#">Schools/Colleges</a>
+            <ul>
+              <li><a href = "CNS.html">College of Natural Sciences</a>
+              <li><a href = "education1.html">College of Education</a>
+              <li><a href = "architecture2.html">School of Architecture</a>
+              <li><a href = "cockrell3.html">Cockrell School of Engineering</a>
+              <li><a href="./finarts4.html">College of Fine Arts</a>
+              <li><a href="./geosciences5.html">Jackson School of Geosciences</a>
+              <li><a href="./information6.html">College of Information</a>
+              <li><a href="./liberalarts7.html">College of Liberal Arts</a>
+              <li><a href="./mccombs8.html">McCombs School of Business</a>
+              <li><a href="./moody9.html">Moody College of Communication</a>
+              <li><a href="./nursing10.html">School of Nursing</a>
+              <li><a href="./pharmacy11.html">College of Pharmacy</a>
+              <li><a href="./socialwork12.html">Steve Hicks School of Social Work</a>
+              <li><a href="./testPage.html">Test</a>
+             <li><a href="./combinedtest.html">CombTest</a>
+
+
+            </ul>
+          <li><a href = "postings.html">Postings</a>
+          <li><a href = "about.html">About</a>
+        </li>
+
+       
+
+    </nav>
+  </header>
+  <body style="background-color: #ddd">
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+    <nav>
+    <h2>College of Natural Sciences Study Group Form</h2>
+    <nav>
+    
+    <p>Sign up to find a study group!</p>  
+    <br>  
+    <form id="test-form">
+      
+      
+  
+  <div class = "container">
+    
+    <label>First Name:</label>
+    <br>
+    
+    <input type="text" name="First Name" placeholder="First Name"/>
+    
+  </div>
+
+  <div class = "container">
+    
+    <label>Last Name:</label>
+    <br>
+    <input type="text" name="Last Name" placeholder="Last Name"/>
+
+  </div>
+  
+  <div class = "container">
+   
+    <label>Major:</label>
+    <br>
+    <input type="text" name="Major" placeholder="Major"/>
+
+  </div>
+  
+  <div class = "container">
+    
+    <label>Email Address: </label>
+    <br>
+    <input type="text" name="Email Address" placeholder="Email Address"/>
+
+  </div>
+  
+  <div class = "container">
+    <label>Course:</label>
+    <br>
+    <input type="text" name="Course" placeholder="Course"/>
+
+  </div>
+
+  <div class = "container">
+    <label>Topics of Interest:</label>
+    <br>
+    <input type="text" name="Topics of Interest" placeholder="Topics of Interest"/>
+   
+  </div>
+
+  <div class = "container">
+    <br>
+    <button type="submit"id="submit-form">Submit</button>
+  </div>
+
+</form>
+
+
+  </body>
+</html>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxoGk-KvtjX8AheHFr588CrcarlYYSkfTi-W6_vfnrJO1qVQroug0ljoQ5KkbtJ1367/exec'
+  const form = document.forms['test-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<iframe src="https://sheet2api.com/table/ysvQ50jbRyas/study-group-information/Sheet1"
+width="100%" height="600" frameBorder="0"
+style="border: 1px solid #dedede;background: transparent;"></iframe>
